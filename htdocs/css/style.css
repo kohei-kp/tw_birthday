@@ -140,7 +140,7 @@ nav#menubar ul li#current a {
 ---------------------------------------------------------------------------*/
 #contents {
 	clear: left;
-	width: 870px;	/*コンテンツ幅*/
+	width: 920px;	/*コンテンツ幅*/
 	background-color: #000;	/*背景色*/
 	border-radius: 10px;	/*角丸のサイズ*/
 	padding: 50px 50px 0px;	/*ボックス内の余白*/
@@ -703,5 +703,49 @@ body.s-n #sub {
 	border: 1px solid #cfcfcf;
 	border-radius: 0px 0px 6px 6px;
 }
+}
 
+/* 追加 */
+/* 2015年版に合わせた奴 */
+#entry-info {
+  margin: 5px 0;
+}
+#entry-info article {
+  display: block;
+  height: 350px;
+  width: 210px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 2px 5px #b1ac90;
+  box-shadow: 0px 2px 5px #b1ac90;
+  background-color: #FFF;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#FFF, #e6e6e6);
+  background-image: linear-gradient(#FFF, #e6e6e6);
+  padding: 5px;
+  float: left;
+  margin: 5px 5px;
+  position: relative;
+  text-align: center;
+}
+#entry-info figure {
+  display: block;
+  width: 140px;
+  height: 150px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+} 
+
+#entry-info h1 {
+  color: #000;
+  border-bottom: 1px;
+  border-bottom-style: dotted;
+  font-size: 13px;
+}
+#entry-info p {
+  font-size: 11px;
+  color: #000;
+  padding: 0 5px;
+  text-align:left;
 }

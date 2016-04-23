@@ -11,7 +11,7 @@
 <!--/container-->
 
 <!--スライドショースクリプト-->
-<script type="text/javascript" src="js/slide_simple_pack.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>js/slide_simple_pack.js"></script>
 
 <!--スマホ用更新情報-->
 <script type="text/javascript">

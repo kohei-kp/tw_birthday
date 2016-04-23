@@ -9,19 +9,19 @@
 </ul>
 
   <section id="ranking1" class="list">
-  <figure><img src="<?php echo base_url();?>htdocs/images/img.png" width="200" height="133" alt="" /></figure>
+  <figure><img src="<?php echo base_url();?>images/img.png" width="200" height="133" alt="" /></figure>
     <h4>NAME </h4>
     <p>投票コメント</p>
     </section>
 
     <section class="list">
-    <figure><img src="<?php echo base_url();?>htdocs/images/img.png" width="200" height="133" alt="" /></figure>
+    <figure><img src="<?php echo base_url();?>images/img.png" width="200" height="133" alt="" /></figure>
     <h4>NAME </h4>
     <p>投票コメント</p>
     </section>
 
     <section class="list">
-    <figure><img src="<?php echo base_url();?>htdocs/images/img.png" width="200" height="133" alt="" /></figure>
+    <figure><img src="<?php echo base_url();?>images/img.png" width="200" height="133" alt="" /></figure>
     <h4>NAME </h4>
     <p>投票コメント</p>
   </section>

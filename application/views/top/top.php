@@ -1,15 +1,12 @@
-<div id="contents">
 
 <aside id="mainimg">
-<img class="slide_file" src="<?php echo base_url(); ?>htdocs/images/03.png" title="index.html">
-<img class="slide_file" src="<?php echo base_url(); ?>htdocs/images/04.png" title="index.html">
-<input type="hidden" id="slide_loop" value="0">
-<a href="index.html" id="slide_link">
-<img id="slide_image"  src="<?php echo base_url(); ?>htdocs/images/03.png" alt="">
-<img id="slide_image2" src="<?php echo base_url(); ?>htdocs/images/03.png" alt=""></a>
+  <img class="slide_file" src="<?php echo base_url(); ?>images/03.png" title="index.html">
+  <img class="slide_file" src="<?php echo base_url(); ?>images/04.png" title="index.html">
+  <input type="hidden" id="slide_loop" value="0">
+  <a href="index.html" id="slide_link">
+  <img id="slide_image"  src="<?php echo base_url(); ?>images/03.png" alt="">
+  <img id="slide_image2" src="<?php echo base_url(); ?>images/03.png" alt=""></a>
 </aside>
-
-<div id="main">
 
 <section>
   <h2>オシャレメガネ決定戦 2016</h2>
@@ -104,8 +101,8 @@
   <h2 id="newinfo_hdr" class="close">更新情報・お知らせ</h2>
   <dl id="newinfo">
     <dt>2016/05/01</dt>
-    <dd>参加フォーム設置<img src="<?php echo base_url(); ?>htdocs/images/icon_up.gif" alt="up" width="30" height="11"></dd>
+    <dd>参加フォーム設置<img src="<?php echo base_url(); ?>images/icon_up.gif" alt="up" width="30" height="11"></dd>
     <dt>2016/05/01</dt>
-    <dd>サイト開設<img src="<?php echo base_url(); ?>htdocs/images/icon_new.gif" alt="NEW" width="30" height="11"></dd>
+    <dd>サイト開設<img src="<?php echo base_url(); ?>images/icon_new.gif" alt="NEW" width="30" height="11"></dd>
   </dl>
 </section>

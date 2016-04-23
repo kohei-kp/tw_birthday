@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="copyright" content="Template Party">
     <meta name="keywords" content="テイルズウィーバー,マキシミン">
-    <link rel="stylesheet" href="<?php echo base_url();?>htdocs/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>css/style.css">
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-<script type="text/javascript" src="<?php echo base_url(); ?>htdocs/js/openclose.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>js/openclose.js"></script>
   </head>
 
   <body id="top">
@@ -20,7 +20,7 @@
     <div id="container">
 
       <header>
-      <p id="logo"><a href="index.html"><img src="<?php echo base_url();?>htdocs/images/logo.png" width="350" height="70" alt="SAMPLE BAR"></a></p>
+      <p id="logo"><a href="index.html"><img src="<?php echo base_url();?>images/logo.png" width="350" height="70" alt="SAMPLE BAR"></a></p>
       </header>
 
       <nav id="menubar">
