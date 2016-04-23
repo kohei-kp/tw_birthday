@@ -1,7 +1,9 @@
 <section>
 
 <h2 class="mb15">投票</h2>
+<?php echo validation_errors(); ?>
 
+<fieldset>
 <?php echo form_open('vote'); ?>
 <?php if (! $show_form_flag) { ?>
   <section>
@@ -15,10 +17,14 @@
     <tr>
       <th>参加者リスト</th>
       <td>
-        <select name="entry-name">
+        <select name="entry_name">
             <?php foreach ($entry_list as $entry) { echo '<option value=' . $entry['id'] . '>' . $entry['name'] . '</option>'; } ?>
         </select>
       </td>
+    </tr>
+    <tr>
+        <th>コメント</th>
+        <td><textarea name="comment"> <?php echo set_value('comment'); ?></textarea></td>
     </tr>
     <tr>
       <th>&nbsp;</th><td><input type="submit" value="投票"></td>
@@ -28,6 +34,7 @@
 
 <?php } ?>
 </form>
+</fieldset>
 
 <div id="entry-info">
 <?php

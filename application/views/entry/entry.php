@@ -16,7 +16,7 @@
      <tr>
         <th>所属サーバ</th>
         <td><select name="server_name">
-        <?php 
+        <?php
             foreach ($server_list as $server)
             {
                 echo '<option value=' . $server['id'] . '>' . $server['name'] . '</option>';

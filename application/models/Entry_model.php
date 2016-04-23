@@ -21,12 +21,12 @@ class Entry_model extends CI_Model
     public function set_entry()
     {
         $data = [
-            'name'    => $this->input->post('name'),
+            'name'      => $this->input->post('name'),
             'server_id' => $this->input->post('server_name'),
-            'comment' => $this->input->post('comment')
+            'comment'   => $this->input->post('comment')
         ];
 
-        return $this->db->insert('entry', $data);
+        return $this->db->insert('Entry', $data);
     }
 
     /**
@@ -43,6 +43,6 @@ class Entry_model extends CI_Model
     public function delete_entry($id)
     {
         $this->db->where('id', $id);
-        return $this->db->delete('entry');
+        return $this->db->delete('Entry');
     }
 }

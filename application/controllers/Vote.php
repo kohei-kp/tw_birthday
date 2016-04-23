@@ -19,12 +19,36 @@ class Vote extends CI_Controller
      */
     public function index()
     {
+        // ヘルパー呼び出し
         $this->load->helper('form');
+        $this->load->library('form_validation');
 
         $entry_list = $this->entry_model->get_entry();
 
-        $this->load->view('common/header', [ 'page_title' => '投票' ]);
-        $this->load->view('vote/vote', [ 'show_form_flag' => true, 'entry_list' => $entry_list ]);
-        $this->load->view('common/footer');
+        $comment = '';
+
+        $this->form_validation->set_rules('comment', 'Comment', 'required');
+
+        if ($this->form_validation->run() === FALSE)
+        {
+            $this->load->view('common/header', [ 'page_title' => '投票' ]);
+            $this->load->view('vote/vote', [
+                'show_form_flag' => true,
+                'entry_list'     => $entry_list,
+                'comment'        => $comment
+            ]);
+            $this->load->view('common/footer');
+        }
+        else
+        {
+            // DB登録
+            if ($this->vote_model->set_vote())
+            {
+                // とりあえずTOPへ
+                $this->load->view('common/header');
+                $this->load->view('top/top');
+                $this->load->view('common/footer');
+            }
+        }
     }
 }
