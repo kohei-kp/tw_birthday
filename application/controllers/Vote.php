@@ -33,7 +33,7 @@ class Vote extends CI_Controller
         {
             $this->load->view('common/header', [ 'page_title' => '投票' ]);
             $this->load->view('vote/vote', [
-                'show_form_flag' => true,
+                'show_form_flag' => false,
                 'entry_list'     => $entry_list,
                 'comment'        => $comment
             ]);
@@ -42,7 +42,7 @@ class Vote extends CI_Controller
         else
         {
             // DB登録
-            if ($this->vote_model->set_vote())
+            if ($this->vote_model->set_vote() && $this->entry_model->add_count())
             {
                 // とりあえずTOPへ
                 $this->load->view('common/header');

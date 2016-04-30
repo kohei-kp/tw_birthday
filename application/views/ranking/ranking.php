@@ -8,23 +8,27 @@
   <li>10位～</li>
 </ul>
 
-  <section id="ranking1" class="list">
-  <figure><img src="<?php echo base_url();?>images/img.png" width="200" height="133" alt="" /></figure>
-    <h4>NAME </h4>
-    <p>投票コメント</p>
-    </section>
+<?php
+    $content = '';
+    foreach ($entry_list as $entry)
+    {
+        $content.= '<section id="entry-' . $entry['id'] . '" class="list">';
+        $content.= '<figure>';
+        $content.= '<img src="' . base_url() . 'entry/' . $entry['id'] . '.jpg" width=200 height=133 alt"">';
+        $content.= '</figure>';
+        $content.= '<h4>' . $entry['name'] . '</h4>';
+        $content.= '<p>投票コメント</p>';
 
-    <section class="list">
-    <figure><img src="<?php echo base_url();?>images/img.png" width="200" height="133" alt="" /></figure>
-    <h4>NAME </h4>
-    <p>投票コメント</p>
-    </section>
-
-    <section class="list">
-    <figure><img src="<?php echo base_url();?>images/img.png" width="200" height="133" alt="" /></figure>
-    <h4>NAME </h4>
-    <p>投票コメント</p>
-  </section>
+        //{
+        //    // entry_idのコメント回す
+        //    foreach ($vote_list[$entry['id']] as $comment)
+        //    {
+        //        $content.= '<p>' . $comment . '</p>';
+        //    }
+        //}
+        $content.= '</section>';
+    }
+    echo $content;
+?>
 
 </section>
-

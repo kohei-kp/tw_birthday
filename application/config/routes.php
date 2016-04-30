@@ -57,6 +57,8 @@ $route['translate_uri_dashes'] = FALSE;
 $route['top/(.*)'] = 'top/index';
 
 // 参加
+$route['entry'] = 'entry/index';
+$route['entry/complete'] = 'entry/complete';
 $route['entry/(.*)'] = 'entry/index';
 
 // 投票

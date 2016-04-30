@@ -26,10 +26,10 @@
       <nav id="menubar">
         <ul>
           <li id="current"><a href="top">HOME</a></li>
-          <li><a href="entry">参加</a></li>
-          <li><a href="vote">投票</a></li>
-          <li><a href="ranking">ランキング</a></li>
-          <li><a href="../2015/index.html">2015年度</a></li>
+          <li><a href="<?php echo base_url() . 'index.php/'; ?>entry">参加</a></li>
+          <li><a href="<?php echo base_url() . 'index.php/'; ?>vote">投票</a></li>
+          <li><a href="<?php echo base_url() . 'index.php/'; ?>ranking">ランキング</a></li>
+          <li><a href=" http://maximin.link/2015/index.html ">2015年度</a></li>
         </ul>
       </nav>
 

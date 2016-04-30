@@ -29,6 +29,10 @@ class Entry extends CI_Controller
 
         $this->form_validation->set_rules('name', 'Name', 'required');
         $this->form_validation->set_rules('comment', 'Comment', 'required');
+        if (empty($_FILES['entry-image']['name']))
+        {
+            $this->form_validation->set_rules('entry-image', 'Entry Image', 'required');
+        }
 
         if ($this->form_validation->run() === FALSE)
         {
@@ -44,7 +48,7 @@ class Entry extends CI_Controller
             {
                 $id = $this->entry_model->get_id();
                 $config['upload_path'] = './entry/';
-                $config['allowed_types'] = 'gif|jpg|png';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp';
                 $config['file_name'] = $id . '.jpg';
                 $config['max_width'] = 180;
                 $config['max_height'] = 180;
@@ -63,10 +67,18 @@ class Entry extends CI_Controller
                 else
                 {
                     $this->load->view('common/header');
-                    $this->load->view('top/top');
+                    $this->load->view('entry/complete');
                     $this->load->view('common/footer');
                 }
             }
         }
+    }
+
+    /**
+     * エントリー完了
+     */
+    public function complete()
+    {
+        redirect('/top/top/', 'refresh');
     }
 }
